@@ -1,29 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="OlivoExamenP2.MainPage">
+             x:Class="OlivoExamenP2.MainPage"
+             Title="Conversor de Unidades">
     <ContentPage.Content>
-        <Grid Padding="20" RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*"
-             <Label Grid.ColumnSpan="2"
+        <Grid Padding="20" RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*">
+            <Label Grid.ColumnSpan="2"
                     Text="Conversor de unidades"
                     FontSize="24"
                     HorizontalOptions="Center"
-                    Margin="0,10"/>
+                    Margin="0,10"
+                    />
 
-            <Label Text="De: " VerticalOptions="Center"/>
-            <Picker x:Name="Unidad a convertir"
+            <Label Text="De:" VerticalOptions="Center"/>
+            <Picker x:Name="FromUnitPicker"
                         Grid.Column="1"
                         ItemsSource="{Binding Units}"
                         SelectedIndex="0" />
 
             <Label Text="A: " VerticalOptions="Center" Grid.Row="1"/>
-            <Picker x:Name="Unidad a escoger"
+            <Picker x:Name="ToUnitPicker"
             Grid.Column="1"
             Grid.Row="1"
             ItemsSource="{Binding Units}"
             SelectedIndex="1" />
 
-            <Entry x:Name="Entrada"
+            <Entry x:Name="InputEntry"
                    Grid.Row="2"
                    Grid.ColumnSpan="2"
                    Placeholder="Ingrese la cantidad"
@@ -38,7 +40,7 @@
                     Grid.Column="1"
                     Clicked="OnClearButtonClicked"/>
 
-            <Label x:Name="Resultado"
+            <Label x:Name="ResultLabel"
                    Grid.Row="4"
                    Grid.ColumnSpan="2"
                    FontSize="18"
