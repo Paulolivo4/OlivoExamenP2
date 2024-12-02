@@ -1,12 +1,12 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OlivoExamenP2.MainPage"
-             Title="Conversor de Unidades">
+             Title="POConversor de Unidades">
     <ContentPage.Content>
         <Grid Padding="20" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*,*">
           
             <Label Grid.ColumnSpan="2" 
-                   Text="Conversor de Unidades" 
+                   Text="POConversor de Unidades" 
                    FontSize="24" 
                    HorizontalOptions="Center" 
                    Margin="0,10"/>

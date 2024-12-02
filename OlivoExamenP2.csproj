@@ -70,6 +70,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="MainPagePO.xaml.cs">
+	    <DependentUpon>MainPagePO.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="ConvertidorPO.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
