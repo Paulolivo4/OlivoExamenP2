@@ -27,8 +27,8 @@ namespace OlivoExamenP2
             try 
             {
                 //Obtiene los valores
-                string fromUnit = FromUnitPicker.SelectedItem?.ToString();
-                string toUnit = ToUnitPicker.SelectedItem?.ToString();
+                string? fromUnit = FromUnitPicker.SelectedItem?.ToString();
+                string? toUnit = ToUnitPicker.SelectedItem?.ToString();
                 string inputText = InputEntry.Text;
 
                 if (string.IsNullOrWhiteSpace(inputText) || fromUnit == null || toUnit == null) 

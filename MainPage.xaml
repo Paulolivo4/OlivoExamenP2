@@ -12,41 +12,49 @@
                     Margin="0,10"
                     />
 
-            <Label Text="De:" VerticalOptions="Center"/>
+            <Label Text="De:" VerticalOptions="Center" Grid.Row="1"/>
             <Picker x:Name="FromUnitPicker"
                         Grid.Column="1"
+                        Grid.Row="1"
                         ItemsSource="{Binding Units}"
                         SelectedIndex="0" />
 
-            <Label Text="A: " VerticalOptions="Center" Grid.Row="1"/>
+            <Label Text="A: " VerticalOptions="Center" Grid.Row="2"/>
             <Picker x:Name="ToUnitPicker"
             Grid.Column="1"
-            Grid.Row="1"
+            Grid.Row="2"
             ItemsSource="{Binding Units}"
             SelectedIndex="1" />
 
             <Entry x:Name="InputEntry"
-                   Grid.Row="2"
+                   Grid.Row="3"
                    Grid.ColumnSpan="2"
                    Placeholder="Ingrese la cantidad"
-                   Keyboard="Numeric"/>
+                   Keyboard="Numeric"
+                   Margin="0,10"/>
 
             <Button Text="Convertir"
-                Grid.Row="3"
-                Clicked="OnConvertButtonClicked"/>
+                Grid.Row="4"
+                Grid.Column="0"
+                Clicked="OnConvertButtonClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
 
             <Button Text="Limpiar"
-                    Grid.Row="3"
+                    Grid.Row="4"
                     Grid.Column="1"
-                    Clicked="OnClearButtonClicked"/>
+                    Clicked="OnClearButtonClicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
 
             <Label x:Name="ResultLabel"
-                   Grid.Row="4"
+                   Grid.Row="5"
                    Grid.ColumnSpan="2"
                    FontSize="18"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
-                   TextColor="Blue"/>
+                   TextColor="Blue"
+                   Margin="0,10"/>
 
 
 
